@@ -1,0 +1,33 @@
+.post_card{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid skyblue;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    flex-direction: column;
+}
+.post_card>h2{
+    margin: 0px auto 2px auto;
+    text-align: center;
+    color: #325cfd;
+}
+.post_title{
+    margin: 0px auto 2px auto;
+    text-align: center;
+    color: #325cfd;
+    font-weight: 900;
+}
+.post_body{
+    margin: 2px 4px 5px 4px;
+    text-align: center;
+    color: #153655;
+    font-weight: 500;
+}
+.post_city{
+    margin: 0px auto 2px auto;
+    color: #325cfd;
+    font-weight: 900;
+    text-align: center;
+}

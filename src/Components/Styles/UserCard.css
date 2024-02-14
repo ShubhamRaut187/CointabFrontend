@@ -1,0 +1,49 @@
+.usercard{
+    height: 250px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 1px solid skyblue;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.user_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+.user_info>p{
+    margin: 2px auto 0px 6px;
+    text-align: left;
+    color: #153655;
+    font-weight: 500;
+}
+.user_info>h2{
+    text-align: left;
+    margin: auto auto 5px 6px;
+    color: #325cfd;
+}
+.operations_button{
+    width: 30%;
+}
+.operations_button>button{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #325cfd;
+
+    background: linear-gradient(to right, #f9e545 50%, #325cfd 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1s ease-out;
+}
+.operations_button>button:hover{
+    background-position: left bottom;
+}

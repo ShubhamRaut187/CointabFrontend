@@ -1,0 +1,61 @@
+.post_user_info{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    margin: auto;
+}
+.post_operations_button{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.post_operations_button>button{
+    width: 30%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #325cfd;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+
+    background: linear-gradient(to right, #f9e545 50%, #325cfd 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1s ease-out;
+}
+.post_operations_button>button:hover{
+    background-position: left bottom;
+}
+.posts_parent{
+    width: 90%;
+    margin: 20px auto 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    gap: 20px;
+}
+
+/* Media */
+/* Small Screens */
+@media screen and (min-width:320px) and (max-width:767px){
+    .post_operations_button>button{
+        width: 80%;
+    }
+    .posts_parent{
+    grid-template-columns: repeat(1,1fr);
+   }
+ }
+ 
+ /* Medium Screens */
+ @media screen and (min-width:768px) and (max-width:1024px){
+    .post_operations_button>button{
+        width: 50%;
+    }
+    .posts_parent{
+        grid-template-columns: repeat(2,1fr);
+       }
+ }

@@ -4,7 +4,7 @@ import './Styles/AddButton.css'
 function AddButton({user,getdata}) {
     let adduser = async() => {
         try {
-            let results = await fetch(`http://localhost:8000/users/create`,{
+            let results = await fetch(`https://cointabbackend-dlh1.onrender.com/users/create`,{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'

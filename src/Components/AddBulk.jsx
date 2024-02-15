@@ -4,7 +4,7 @@ function AddBulk({SetPostFlag,Postapi,UserId}) {
     // console.log(Postapi);
     let addposts = async() => {
         try {
-            let results = await fetch(`http://localhost:8000/posts/create/${UserId}`,{
+            let results = await fetch(`https://cointabbackend-dlh1.onrender.com/posts/create/${UserId}`,{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
@@ -12,7 +12,7 @@ function AddBulk({SetPostFlag,Postapi,UserId}) {
                 body:JSON.stringify(Postapi)
             });
             let response = await results.json();
-            console.log(response);
+            // console.log(response);
             if(response.Message === 'Posts saved successfully'){
                 alert('Post Saved');
                 SetPostFlag(true);

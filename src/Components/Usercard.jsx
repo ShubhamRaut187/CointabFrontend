@@ -4,7 +4,7 @@ import AddButton from './AddButton';
 import OpenButton from './OpenButton';
 
 function Usercard({flag,user,getdata}) {
-    console.log(flag);
+    // console.log(flag);
      
     return (
         <div className='usercard'>

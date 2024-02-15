@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 import Usercard from '../Components/Usercard';
+import LoadingComp from '../Components/LoadingComp';
 import './Styles/Home.css'
 
 
@@ -47,7 +48,7 @@ function Home(props) {
             </div>
             <div className='user_parents'>
                 {
-                    api_data.map((elem)=>{
+                    loading?<LoadingComp/> : api_data.map((elem)=>{
                         return <Usercard flag={usercheck(elem.id)?true:false} user={elem} key={elem.id} getdata={getdata}/>
                     })
                 }
